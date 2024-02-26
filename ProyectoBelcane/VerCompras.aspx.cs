@@ -21,7 +21,7 @@ namespace ProyectoBelcane
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AdministracionInsumos.aspx");
+            Response.Redirect("AdministracionInsumos.aspx");//asd comentario
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
