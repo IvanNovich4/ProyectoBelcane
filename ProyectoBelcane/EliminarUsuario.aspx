@@ -1,0 +1,21 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EliminarUsuario.aspx.cs" Inherits="ProyectoBelcane.EliminarUsuario" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:SqlDataSource ID="DSUsuarios" runat="server" ConnectionString="Data Source=ivanoski;Min Pool Size=0;Max Pool Size=10024;Pooling=true;Initial Catalog=bd1;Integrated Security=SSPI" DeleteCommand="delete from usuarios where codigo=@codigo" ProviderName="System.Data.SqlClient">
+                <DeleteParameters>
+                    <asp:Parameter Name="codigo" />
+                </DeleteParameters>
+            </asp:SqlDataSource>
+        </div>
+    </form>
+</body>
+</html>
